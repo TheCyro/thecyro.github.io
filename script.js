@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Get the total number of slides
     const slides = document.querySelectorAll('.project-slider .swiper-slide');
     const middleSlide = Math.floor(slides.length / 2);
 
@@ -23,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         grabCursor: true,
         centeredSlides: true,
         slidesPerView: 'auto',
-        initialSlide: middleSlide, // Set the initial slide to the middle one
+        initialSlide: middleSlide,
         coverflowEffect: {
             rotate: 50,
             stretch: 0,
@@ -40,7 +39,4 @@ document.addEventListener('DOMContentLoaded', () => {
             prevEl: '.swiper-button-prev',
         },
     });
-
-    // The line to snap to the first slide is no longer needed
-    // swiper.slideToLoop(0, 0);
 });
